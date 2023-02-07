@@ -175,7 +175,7 @@ footer {
 }
 
 footer a {
-    color: #674215;
+    color: #5d3d14;
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -277,7 +277,7 @@ button:hover {
     position: absolute;
     top: 0;
     transform: translate(0px, 60vw);
-    background-image: linear-gradient(185deg, #332009, #1c1204);
+    background-image: linear-gradient(185deg, hsl(18, 24%, 15%), hsl(27, 28%, 15%));
     z-index: 9990;
 }
 
