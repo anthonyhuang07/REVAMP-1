@@ -14,7 +14,7 @@ permalink: /about/
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
@@ -24,11 +24,16 @@ permalink: /about/
     <meta name="application-name" content="Anthony Huang's Website">
     <meta name="msapplication-TileColor" content="#ff7700">
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    
-    <link rel="stylesheet" href="/src/styles/main.css">
+
+    <link rel="stylesheet" href="./styles/main.css">
     <style>
-        main a {
+        article a {
             text-decoration: underline;
+        }
+
+        article p{
+            font-size: 1em;
+            text-align: center;
         }
 
         main ul li ul {
@@ -51,41 +56,46 @@ permalink: /about/
         article img:hover {
             width: 250px;
         }
-
-        @media screen and (max-width: 500px) {
-            article img {
-                width: 125px !important;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/">Home</a></li>
-            <a href="/about/">About</a></li>
-            <a href="/projects/">Projects</a></li>
-            <a href="https://blog.ah07.xyz/">Blog</a></li>
-            <a href="/contact/">Contact</a></li>
-        </nav>
-    </header>
-    <main>
-        <div class="cool">
-            <h1><span class="date">About</span> Me!</h1>
-        </div>
-        <article><br>
-            <p>Hello! My name is Anthony Huang, I am a 15 year old male, and I am a Canadian Highschooler (Grade 10) residing in Ontario. Here are some random facts about me:<br><br>
+
+    <body onscroll="split(), headerHide()">
+        <header id="h-hide">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about/" href="./src/about.html">About</a>
+                <a href="/projects/">Projects</a>
+                <a href="https://blog.ah07.xyz/">Blog</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="cool">
+                <h1 id="title" class="date">About Me</h1>
+            </div>
+            <div class="mtCoronet0"></div>
+            <div class="mtCoronet"></div>
+            <div class="mtCoronet2"></div>
+            <div class="mtCoronet3"></div>
+            <div class="mtCoronet4"></div>
+            <div class="mtCoronet5"></div>
+            <div class="mtCoronet6"></div>
+        </main>
+        <article>
             <ul>
+                <p>Hello! My name is Anthony Huang, I am a 15 year old male, and I am a Canadian Highschooler (Grade 10)
+                    residing in Ontario. Here are some random facts about me:</p>
                 <li>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png"
                         style="border-radius: 00rem" />
                     I know HTML, CSS, JavaScript and TypeScript. My main code editor is
                     Visual Studio Code, and I wish to be a front-end programmer in the future.
                 </li><br>
-                <li> 
+                <li>
                     <div>If you're wondering about my username, <a href="/src/extras/name">here's how I got it</a></div>
-                    <img src="/assets/images/newProfilePicture.png" />
+                    <img src="../assets/images/newProfilePicture.png" style="border-radius: 2rem;"/>
                 </li><br>
                 <li>
                     <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Geometry_Dash_Logo.PNG"
@@ -98,17 +108,18 @@ permalink: /about/
                     </div>
                 </li><br>
                 <li>
-                    I have quite a bit of video editing and photo editing experience, with Premiere Pro and Photoshop. I can also use
+                    I have quite a bit of video editing and photo editing experience, with Premiere Pro and Photoshop. I
+                    can also use
                     Illustrator.
                     <img src="https://i.imgur.com/ZQL3Eq6.png" style="border-radius: 00rem;" />
                 </li><br>
                 <li>
-                    <img src="https://c.tenor.com/7wFKB2XqZrgAAAAC/black-kid-facts.gif" style="border-radius: 1rem;"/>
+                    <img src="https://c.tenor.com/7wFKB2XqZrgAAAAC/black-kid-facts.gif" style="border-radius: 2rem;" />
                     I speak English, French, and Chinese Mandarin.
                 </li><br>
                 <li>
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Canada.png" style="border-radius: 1rem;"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Canada.png"
+                        style="border-radius: 2rem;" />
                     I am quite a Geography nerd as well, I can name every single country's flag. (Not islands though)
                 </li><br>
                 <li>
@@ -126,11 +137,14 @@ permalink: /about/
                             <li>macOS 13 (Ventura)</li>
                         </ul>
                     </div>
-                    <img src="https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP869/SP869-2022-macbook-air-m2-colors.png" style="border-radius: 0;" />
+                    <img src="https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP869/SP869-2022-macbook-air-m2-colors.png"
+                        style="border-radius: 0;" />
                 </li><br>
                 <li>
                     <img src="https://i.imgur.com/hzzRc2Y.png" style="border-radius: 0;" />
-                    One of my hobbies is keyboards, I currently have a prebuilt Keychron K8, foam modded, band-aid modded, clipped stabilizers lubed with dielectric grease, with Gateron Milky Yellows. I also added a Glorious black wood wrist rest.
+                    One of my hobbies is keyboards, I currently have a prebuilt Keychron K8, foam modded, band-aid
+                    modded, clipped stabilizers lubed with dielectric grease, with Gateron Milky Yellows. I also added a
+                    Glorious black wood wrist rest.
                 </li><br>
                 <li>
                     I have arachnophobia. Pretty bad that even a realistic image of a spider on a screen will scare me.
@@ -139,17 +153,18 @@ permalink: /about/
                     <img src="https://i.imgur.com/w72ejrZ.png" />
                 </li><br>
                 <li>
-                    <img src="https://parspng.com/wp-content/uploads/2022/05/Worldcupqatarpng.parspng.com-4.png" style="border-radius: 0;" />
-                    I like football (not American). My favorite teams are Bayern Munich & CF Montréal and my favorite player is Alphonso Davies.
+                    <img src="https://parspng.com/wp-content/uploads/2022/05/Worldcupqatarpng.parspng.com-4.png"
+                        style="border-radius: 0;" />
+                    I like football (not American). My favorite teams are Bayern Munich & CF Montréal and my favorite
+                    player is Alphonso Davies.
                 </li><br>
             </ul><br>
             </p>
         </article>
-        <hr>
-    </main>
-    <footer>
-        <a href="https://github.com/anthonyhuang07/">Copyright (c) 2023 Anthony Huang</a>
-    </footer>
-</body>
-
+        <br>
+        <footer>
+            <a href="https://github.com/anthonyhuang07/">Copyright (c) 2023 Anthony Huang</a>
+        </footer>
+        <script src="./scripts/main.js"></script>
+    </body>
 </html>
