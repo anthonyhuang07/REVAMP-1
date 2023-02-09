@@ -70,6 +70,7 @@ article h1 {
     font-size: 2.5em;
     color: #ffffff;
     padding: 1vw;
+    z-index: 996;
 }
 
 article {
@@ -134,8 +135,7 @@ article hr {
     text-shadow: 0 0 1.5vw #000000;
 }
 
-#date1,
-#date2 {
+#title {
     display: inline-block;
 }
 
@@ -192,10 +192,10 @@ button:hover {
 .mtCoronet2 {
     position: absolute;
     top: 0;
-    transform: translate(25vw, 35vw);
+    transform: translate(25vw, 32vw);
     border-left: 30vw solid transparent;
     border-right: 20vw solid transparent;
-    border-bottom: 25vw solid #121226;
+    border-bottom: 28vw solid #121226;
     z-index: 999;
 }
 
@@ -236,5 +236,5 @@ button:hover {
     border-left: 25vw solid transparent;
     border-right: 13vw solid transparent;
     border-bottom: 24vw solid #29264b;
-    z-index: 990;
+    z-index: 997;
 }
