@@ -5,8 +5,8 @@ let yPos = window.scrollY
 function split(){
     date1.style.transform = "rotate(-"+(window.scrollY/12.4)+"deg) translate(-"+(window.scrollY/19.1)+"vw)";
     date2.style.transform = "rotate("+(window.scrollY/12.4)+"deg) translate("+(window.scrollY/19.1)+"vw)";
-    date1.style.opacity = ("1")-(window.scrollY/670);
-    date2.style.opacity = ("1")-(window.scrollY/670);  
+    date1.style.opacity = ("1")-(window.scrollY/630);
+    date2.style.opacity = ("1")-(window.scrollY/630);  
 }
 
 // hides and shows the header

@@ -9,8 +9,8 @@
     margin: 0;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
 }
 
 html {
@@ -24,15 +24,14 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: hsl(229, 73%, 3%);
-    background-image: linear-gradient(185deg, hsl(18, 24%, 15%), hsl(27, 28%, 15%));
+    background-color: #0f0e23;
 }
 
 header {
     position: fixed;
     font-family: 'Aldrich', monospace;
     background-color:
-        hsl(200, 10%, 10%);
+        hsl(236, 29%, 12%);
     width: 100%;
     z-index: 9999;
     transition: 0.25s visibility;
@@ -49,6 +48,7 @@ header a {
 
 header a:hover {
     background-color: rgb(36, 36, 40);
+    transition: background-color 0.25s
 }
 
 header nav {
@@ -57,38 +57,41 @@ header nav {
     justify-content: flex-end;
 }
 
-header:hover {
-    animation: dynamicIsland 0.3s ease-in-out forwards running;
-    transition: animation 0.2s
-}
-
 main {
     color: #ffffff;
     text-align: center;
     height: 100%;
-    background-image: linear-gradient(to bottom, #1E1663, #CB5269, #D9633E);
+    background-image: linear-gradient(to top, #FD6846,#A43C52, #41165E, #2F0E64);
 }
 
-main h1 {
+main h1,
+article h1 {
     font-family: 'Aldrich', monospace;
     font-size: 2.5em;
     color: #ffffff;
-    padding: 1rem;
+    padding: 1vw;
 }
 
-main p {
+article {
+    color: white;
+    position: relative;
+    z-index: 9998;
+    margin-top: 10vw;
+}
+
+article p {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.4em;
+    font-size: 1.5em;
     width: 90%;
 }
 
-main a {
+article a {
     color: #a2ddff;
     text-decoration: none;
     transition: text-shadow 0.3s;
 }
 
-main ul {
+article ul {
     font-family: 'JetBrains Mono', 'Helvetica Neue', sans-serif;
     width: 90%;
     font-size: 1.4em;
@@ -96,20 +99,20 @@ main ul {
     margin: auto;
 }
 
-main h2 {
+article h2 {
     font-family: 'Aldrich', Helvetica, sans-serif;
     margin: 15px;
 }
 
-main a:hover {
+article a:hover {
     text-shadow: 0 0 6px #4b93ff;
 }
 
-main img {
+article img {
     padding: 1.5rem;
 }
 
-main hr {
+article hr {
     margin: auto;
     margin-top: 3rem;
     border: white solid 0.1rem;
@@ -128,12 +131,12 @@ main hr {
 
 .cool .date {
     color: #ff7700;
-    text-shadow: 0 0 2rem #000000;
+    text-shadow: 0 0 1.5vw #000000;
 }
 
 #date1,
 #date2 {
-    display: inline-block; 
+    display: inline-block;
 }
 
 footer {
@@ -147,7 +150,7 @@ footer {
 }
 
 footer a {
-    color: #5d3d14;
+    color: hsl(243, 43%, 25%);
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -165,97 +168,73 @@ button:hover {
     cursor: pointer;
 }
 
-.mtCoronet0{
+/* Mountains */
+.mtCoronet0 {
     position: absolute;
     top: 0;
     transform: translate(-15vw, 37vw);
     border-left: 20vw solid transparent;
     border-right: 40vw solid transparent;
-    border-bottom: 23vw solid #2d2922;
+    border-bottom: 23vw solid #150f2b;
     z-index: 998;
 }
 
-.mtCoronet{
+.mtCoronet {
     position: absolute;
     top: 0;
     transform: translate(5vw, 30vw);
     border-left: 20vw solid transparent;
     border-right: 20vw solid transparent;
-    border-bottom: 30vw solid #3b332a;
+    border-bottom: 30vw solid #0f0e23;
     z-index: 1000;
 }
 
-.mtCoronet2{
+.mtCoronet2 {
     position: absolute;
     top: 0;
     transform: translate(25vw, 35vw);
     border-left: 30vw solid transparent;
     border-right: 20vw solid transparent;
-    border-bottom: 25vw solid #322f2a;
+    border-bottom: 25vw solid #121226;
     z-index: 999;
 }
 
-.mtCoronet3{
+.mtCoronet3 {
     position: absolute;
     top: 0;
     transform: translate(10vw, 37vw);
     border-left: 30vw solid transparent;
     border-right: 19vw solid transparent;
-    border-bottom: 25vw solid #312d23;
+    border-bottom: 23vw solid #1f1f3d;
     z-index: 995;
 }
 
-.mtCoronet4{
+.mtCoronet4 {
     position: absolute;
     top: 0;
     transform: translate(40vw, 32vw);
     border-left: 33vw solid transparent;
     border-right: 20vw solid transparent;
-    border-bottom: 25vw solid rgb(47, 42, 31);
+    border-bottom: 25vw solid #1f1a3c;
     z-index: 998;
 }
 
-.mtCoronet5{
+.mtCoronet5 {
     position: absolute;
     top: 0;
     transform: translate(60vw, 38vw);
     border-left: 40vw solid transparent;
     border-right: 0vw solid transparent;
-    border-bottom: 22vw solid rgb(51, 46, 30);
+    border-bottom: 22vw solid #14142d;
     z-index: 998;
 }
 
-.mtCoronet6{
+.mtCoronet6 {
     position: absolute;
     top: 0;
     transform: translate(61vw, 36vw);
     border-left: 25vw solid transparent;
     border-right: 13vw solid transparent;
-    border-bottom: 28vw solid rgb(43, 40, 28);
+    border-bottom: 24vw solid #29264b;
     z-index: 990;
-}
-
-
-.grass{
-    position: absolute;
-    top: 0;
-    transform: translate(0px, 60vw);
-    padding: 2vw 50vw;
-    background-image: linear-gradient(185deg, #128511, #128511);
-    z-index: 9991;
-}
-
-.cave{
-    position: absolute;
-    top: 0;
-    padding: 30% 100% 0 0;
-    transform: translate(0px, 60vw);
-    background-image: linear-gradient(185deg, hsl(18, 24%, 15%), hsl(27, 28%, 15%));
-    z-index: 9990;
-}
-
-article{
-    margin-top: 10vw;
-    position: relative;
-    z-index: 9998;
 }
