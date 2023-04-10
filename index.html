@@ -26,24 +26,6 @@
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 
     <link rel="stylesheet" href="./src/styles/main.css">
-    <style>
-        article a {
-            text-decoration: underline;
-        }
-
-        article p{
-            width: 85%;
-        }
-
-        article{
-            display: flex;
-            padding: 0 1vw 0 2.5vw;
-            text-align: left;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body onscroll="split(), headerHide()">
@@ -58,7 +40,7 @@
     </header>
     <main>
         <div class="cool">
-            <h1 id="title" class="date">FHDHGNGN</h1>
+            <h1><span class="date" id="date1">FHDH</span><span class="date" id="date2">GNGN</span></h1>
         </div>
         <div class="mtCoronet0"></div>
         <div class="mtCoronet"></div>
@@ -68,12 +50,11 @@
         <div class="mtCoronet5"></div>
         <div class="mtCoronet6"></div>
     </main>
-    <article>
+    <article id="homeArticle">
         <p>Hey there, I'm Anthony, also known as FHDHGNGN online! I am a male 15 year old Canadian front-end
             programmer. I am currently in High School (Grade 10). This website was made with plain HTML, CSS and
             JavaScript.<br><br>For more info, check out my <a href="/about/">About Me!</a></p>
-        <img src="./assets/images/newProfilePicture.png" alt="profile picture" style="border-radius: 3rem"
-            width="250px" />
+        <img src="./assets/images/newProfilePicture.png" alt="profile picture" width="300px" />
     </article>
     <br>
     <footer>

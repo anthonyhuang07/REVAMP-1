@@ -70,19 +70,20 @@ article h1 {
     font-size: 2.5em;
     color: #ffffff;
     padding: 1vw;
-    z-index: 996;
 }
 
 article {
     color: white;
     position: relative;
     z-index: 9998;
-    margin-top: 11%;
+    margin-top: 9.9vw;
+    background-color: #0f0e23;
 }
 
 article p {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5em;
+    width: 70%;
 }
 
 article a {
@@ -108,16 +109,28 @@ article a:hover {
     text-shadow: 0 0 6px #4b93ff;
 }
 
-article img {
-    padding: 1.5rem;
-}
-
 article hr {
     margin: auto;
     margin-top: 3rem;
     border: white solid 0.1rem;
     border-radius: 100rem;
     width: 75%;
+}
+
+article img{
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+
+#homeArticle{
+    display: flex;
+    padding: 0 1.5vw 0 3vw;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+} #homeArticle a{
+    text-decoration: underline;
 }
 
 .cool {
@@ -134,7 +147,8 @@ article hr {
     text-shadow: 0 0 1.5vw #000000;
 }
 
-#title {
+#date1,
+#date2 {
     display: inline-block;
 }
 
@@ -149,7 +163,7 @@ footer {
 }
 
 footer a {
-    color: hsl(243, 43%, 30%);
+    color: hsl(238, 26%, 71%);
     text-decoration: none;
     font-size: 1.5em;
 }
@@ -191,10 +205,10 @@ button:hover {
 .mtCoronet2 {
     position: absolute;
     top: 0;
-    transform: translate(25vw, 32vw);
+    transform: translate(25vw, 35vw);
     border-left: 30vw solid transparent;
     border-right: 20vw solid transparent;
-    border-bottom: 28vw solid #121226;
+    border-bottom: 25vw solid #121226;
     z-index: 999;
 }
 
@@ -235,5 +249,5 @@ button:hover {
     border-left: 25vw solid transparent;
     border-right: 13vw solid transparent;
     border-bottom: 24vw solid #29264b;
-    z-index: 997;
+    z-index: 990;
 }
