@@ -9,10 +9,6 @@
     margin: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 html {
     position: relative;
 }
@@ -83,7 +79,7 @@ article {
 article p {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5em;
-    width: 70%;
+    /* width: 70%; */
 }
 
 article a {
@@ -130,6 +126,24 @@ article img{
     flex-direction: row;
     align-items: center;
 } #homeArticle a{
+    text-decoration: underline;
+}
+
+#aboutArticle p{
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+} #aboutArticle ul li ul{
+    font-size: 1em;
+} #aboutArticle li{
+    list-style-position: inside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} #aboutArticle img{
+    width: 175px;
+    border-radius: 100rem;
+} #aboutArticle a{
     text-decoration: underline;
 }
 

@@ -26,37 +26,6 @@ permalink: /about/
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 
     <link rel="stylesheet" href="./styles/main.css">
-    <style>
-        article a {
-            text-decoration: underline;
-        }
-
-        article p{
-            font-size: 1em;
-            text-align: center;
-        }
-
-        main ul li ul {
-            font-size: 1em;
-        }
-
-        article li {
-            list-style-position: inside;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        article img {
-            width: 175px;
-            border-radius: 100rem;
-            transition: width 0.4s;
-        }
-
-        article img:hover {
-            width: 250px;
-        }
-    </style>
 </head>
 
 <body>
@@ -73,7 +42,7 @@ permalink: /about/
         </header>
         <main>
             <div class="cool">
-                <h1 id="title" class="date">About Me</h1>
+                <h1><span class="date" id="date1">About</span> <span class="date" id="date2">Me!</span></h1>
             </div>
             <div class="mtCoronet0"></div>
             <div class="mtCoronet"></div>
@@ -83,10 +52,10 @@ permalink: /about/
             <div class="mtCoronet5"></div>
             <div class="mtCoronet6"></div>
         </main>
-        <article>
+        <article id="aboutArticle">
             <ul>
                 <p>Hello! My name is Anthony Huang, I am a 15 year old male, and I am a Canadian Highschooler (Grade 10)
-                    residing in Ontario. Here are some random facts about me:</p>
+                    residing in Ontario. Here are some random facts about me:</p><br><br>
                 <li>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png"
                         style="border-radius: 00rem" />
