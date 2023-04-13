@@ -250,7 +250,7 @@ button:hover {
     position: absolute;
     top: 0;
     transform: translate(60vw, 38vw);
-    border-left: 39.25vw solid transparent;
+    border-left: 39vw solid transparent;
     border-right: 0vw solid transparent;
     border-bottom: 22vw solid #14142d;
     z-index: 998;
