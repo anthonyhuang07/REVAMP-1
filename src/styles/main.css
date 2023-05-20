@@ -9,6 +9,26 @@
     margin: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0c0d21;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff7700;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(28, 100%, 40%);
+}
+
 html {
     position: relative;
 }
@@ -57,7 +77,7 @@ main {
     color: #ffffff;
     text-align: center;
     height: 100%;
-    background-image: linear-gradient(to top, #FD6846,#A43C52, #41165E, #2F0E64);
+    background-image: linear-gradient(to top, #FD6846, #A43C52, #41165E, #2F0E64);
 }
 
 main h1,
@@ -79,7 +99,6 @@ article {
 article p {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.5em;
-    /* width: 70%; */
 }
 
 article a {
@@ -113,37 +132,47 @@ article hr {
     width: 75%;
 }
 
-article img{
+article img {
     padding: 1.5rem;
     border-radius: 3rem;
 }
 
-#homeArticle{
+#homeArticle {
     display: flex;
     padding: 0 1.5vw 0 3vw;
     text-align: left;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-} #homeArticle a{
+}
+
+#homeArticle a {
     text-decoration: underline;
 }
 
-#aboutArticle p{
+#aboutArticle p {
     font-size: 1em;
     text-align: center;
     width: 100%;
-} #aboutArticle ul li ul{
+}
+
+#aboutArticle ul li ul {
     font-size: 1em;
-} #aboutArticle li{
+}
+
+#aboutArticle li {
     list-style-position: inside;
     display: flex;
     align-items: center;
     justify-content: center;
-} #aboutArticle img{
+}
+
+#aboutArticle img {
     width: 175px;
     border-radius: 100rem;
-} #aboutArticle a{
+}
+
+#aboutArticle a {
     text-decoration: underline;
 }
 
@@ -247,9 +276,10 @@ button:hover {
 }
 
 .mtCoronet5 {
+    /* very right mountain */
     position: absolute;
     top: 0;
-    transform: translate(60vw, 38vw);
+    transform: translate(60.225vw, 38vw);
     border-left: 39vw solid transparent;
     border-right: 0vw solid transparent;
     border-bottom: 22vw solid #14142d;
